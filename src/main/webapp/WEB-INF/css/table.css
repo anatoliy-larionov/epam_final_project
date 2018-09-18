@@ -1,0 +1,23 @@
+table {
+    table-layout: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.info-treatment-table {
+    width: 1366px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.name-table {
+/*    border: 1px solid black;*/
+    padding: 10px;
+    position: absolute;
+    margin-top: -40px;
+    left: 40%;
+}
+
+.exit-auth {
+    float: right;
+}
