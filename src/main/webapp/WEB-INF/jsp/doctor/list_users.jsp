@@ -1,16 +1,17 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%@include file="../shared/header.jsp"%>
 <%@include file="../shared/navigation_doctor.jsp"%>
 
-    <h2>Список пользователей</h2>
+
 
     <div class="content">
         <div class="from-info-treatment">
             <div class="info-treatment">
             <table class="info-treatment-table" border="1">
+                <caption><h2>Список пользователей</h2></caption>
                 <thead>
                 <tr>
                     <th>Н/П</th>
@@ -40,12 +41,11 @@
             </div>
         </div>
 
-        <h2>Добавить пациента</h2>
-
         <div class="content">
             <form class="from-info-treatment" action="<c:url value="/list_users/addUser"/>" method="post">
                 <div class="info-treatment">
                     <table class="info-treatment-table" border="1">
+                        <caption><h2>Добавить лечение</h2></caption>
                         <thead>
                         <tr>
                             <th>Фамилия</th>
@@ -74,13 +74,11 @@
             </form>
         </div>
 
-        <h2>Добавить регистрационный номер пациента</h2>
-
-
         <form action="<c:url value="/list_users/addIdPatient"/>" method="post">
             <div class="from-info-treatment">
                 <div class="info-treatment">
                     <table class="info-treatment-table" border="1">
+                        <caption><h2>Добавить регистрационный номер пациента</h2></caption>
                     <thead>
                     <tr>
                         <th>Номер пользователя</th>
@@ -90,7 +88,7 @@
                     <tbody>
                     <tr>
                         <td><label>
-                            <input type="number" name="ptientIdUser">
+                            <input type="number" name="patientIdUser">
                         </label></td>
                         <td><button type="submit">Добавить</button></td>
                     </tr>

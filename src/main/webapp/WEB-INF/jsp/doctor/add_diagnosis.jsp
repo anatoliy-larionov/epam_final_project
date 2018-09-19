@@ -1,16 +1,15 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%@include file="../shared/header.jsp"%>
 <%@include file="../shared/navigation_doctor.jsp"%>
 
-    <h2>Список диагнозов</h2>
-
     <div class="content">
         <div class="from-info-treatment">
             <div class="info-treatment">
             <table class="info-treatment-table" border="1">
+                <caption><h2>Список диагнозов</h2></caption>
                 <thead>
                 <tr>
                     <th>Н/Лечения</th>
@@ -44,14 +43,11 @@
         </div>
     </div>
 
-
-
-    <h2>Добавить диагноз</h2>
-
     <div class="content">
         <form class="from-info-treatment" action="<c:url value="/add_diagnosis/add"/>" method="post">
             <div class="info-treatment">
             <table class="info-treatment-table" border="1">
+                <caption><h2>Добавить диагноз</h2></caption>
                 <thead>
                 <tr>
                    <th>Н/Пациента</th>

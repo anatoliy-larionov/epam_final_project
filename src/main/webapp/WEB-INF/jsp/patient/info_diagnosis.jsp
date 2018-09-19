@@ -3,12 +3,11 @@
 <%@include file="../shared/header.jsp"%>
 <%@include file="../shared/navigation_patient.jsp"%>
 
-        <h2>Список лечений</h2>
-
         <div class="content">
             <div class="from-info-treatment">
                 <div class="info-treatment">
                     <table class="info-treatment-table" border="1">
+                        <caption><h2>Информация о диагнозах и лечений</h2></caption>
                         <thead>
                         <tr>
                             <th>Н/Лечения</th>

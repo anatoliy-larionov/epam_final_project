@@ -1,6 +1,7 @@
 package com.epam.hospital.hospital_web.web.controller.nurse;
 
 import com.epam.hospital.hospital_web.entity.Treatment;
+import com.epam.hospital.hospital_web.entity.Users;
 import com.epam.hospital.hospital_web.service.TreatmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,7 @@ public class TreatmentController {
     public TreatmentController(TreatmentService treatmentService) {
         this.treatmentService = treatmentService;
     }
+
 
     @GetMapping("treatment")
     public String listTreatmentNurse(Model model) {

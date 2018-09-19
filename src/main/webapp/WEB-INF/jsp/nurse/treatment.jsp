@@ -1,12 +1,14 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <%@include file="../shared/header.jsp"%>
 <%@include file="../shared/navigation_nurse.jsp"%>
-
-    <h2>Список лечений</h2>
 
     <div class="content">
         <div class="from-info-treatment">
             <div class="info-treatment">
                 <table class="info-treatment-table" border="1">
+                    <caption><h2>Список лечений</h2></caption>
                     <thead>
                     <tr>
                         <th>Н/Лечения</th>

@@ -8,7 +8,6 @@
                     <a class="reg-url" href="<c:url value="/login"/>">Персонал</a>
                     <a class="reg-url" href="<c:url value="/login_patient"/>">Пациент</a>
                     <a href="<c:url value="/registration"/>">Регистрация</a>
-                    <a href="<c:url value="/index"/>">Авторизация</a>
                 </nav>
             </div>
         </header>
