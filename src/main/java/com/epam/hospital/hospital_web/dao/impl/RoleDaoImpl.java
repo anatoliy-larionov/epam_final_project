@@ -21,7 +21,7 @@ public class RoleDaoImpl implements RoleDao{
 
     @Override
     public Role findUserByRoleId(Long roleIdUser) {
-        return this.jdbcTemplate.queryForObject("SELECT * FROM role WHERE role_id_user = ?",
+        return this.jdbcTemplate.queryForObject("SELECT * FROM role WHERE id_role = ?",
                 new RoleMapper(), roleIdUser );
     }
 

@@ -1,4 +1,4 @@
-package com.epam.hospital.hospital_web.web.controller;
+package com.epam.hospital.hospital_web.controller;
 
 import com.epam.hospital.hospital_web.exception.InvalidPasswordException;
 import com.epam.hospital.hospital_web.exception.UserNotFoundException;
@@ -25,14 +25,6 @@ public class ExceptionController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("error");
         modelAndView.addObject("error", "Пароль не верный");
-        return modelAndView;
-    }
-
-    @ExceptionHandler(RoleNotFoundException.class)
-    public ModelAndView handleRoleNotFoundException(RoleNotFoundException ex) {
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("error");
-        modelAndView.addObject("error", "Не верна выбрана роль");
         return modelAndView;
     }
 }

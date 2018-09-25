@@ -1,13 +1,11 @@
-package com.epam.hospital.hospital_web.web.controller.patient;
+package com.epam.hospital.hospital_web.controller.patient;
 
 import com.epam.hospital.hospital_web.entity.Patient;
 import com.epam.hospital.hospital_web.entity.Treatment;
 import com.epam.hospital.hospital_web.entity.Users;
 import com.epam.hospital.hospital_web.service.PatientService;
 import com.epam.hospital.hospital_web.service.TreatmentService;
-import com.epam.hospital.hospital_web.service.UsersService;
-import com.epam.hospital.hospital_web.web.manager.PatientManager;
-import com.epam.hospital.hospital_web.web.manager.UsersManager;
+import com.epam.hospital.hospital_web.manager.UsersManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

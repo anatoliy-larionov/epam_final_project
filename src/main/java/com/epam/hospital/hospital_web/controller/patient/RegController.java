@@ -1,6 +1,6 @@
-package com.epam.hospital.hospital_web.web.controller.patient;
+package com.epam.hospital.hospital_web.controller.patient;
 
-import com.epam.hospital.hospital_web.web.manager.UsersManager;
+import com.epam.hospital.hospital_web.manager.UsersManager;
 import com.epam.hospital.hospital_web.entity.Users;
 import com.epam.hospital.hospital_web.exception.UserAlreadyExistsException;
 import com.epam.hospital.hospital_web.service.UsersService;

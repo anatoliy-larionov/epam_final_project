@@ -1,4 +1,4 @@
-package com.epam.hospital.hospital_web.web.controller;
+package com.epam.hospital.hospital_web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

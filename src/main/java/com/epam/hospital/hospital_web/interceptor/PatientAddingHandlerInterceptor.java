@@ -1,6 +1,6 @@
-package com.epam.hospital.hospital_web.web.interceptor;
+package com.epam.hospital.hospital_web.interceptor;
 
-import com.epam.hospital.hospital_web.web.manager.UsersManager;
+import com.epam.hospital.hospital_web.manager.UsersManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.ModelAndView;

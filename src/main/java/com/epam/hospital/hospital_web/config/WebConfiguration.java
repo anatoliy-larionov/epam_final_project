@@ -1,9 +1,9 @@
 package com.epam.hospital.hospital_web.config;
 
-import com.epam.hospital.hospital_web.web.interceptor.AuthPatientInterceptor;
-import com.epam.hospital.hospital_web.web.interceptor.AuthPersonaInterceptor;
-import com.epam.hospital.hospital_web.web.interceptor.PatientAddingHandlerInterceptor;
-import com.epam.hospital.hospital_web.web.interceptor.PersonalAddingHandlerInterceptor;
+import com.epam.hospital.hospital_web.interceptor.AuthPatientInterceptor;
+import com.epam.hospital.hospital_web.interceptor.AuthPersonaInterceptor;
+import com.epam.hospital.hospital_web.interceptor.PatientAddingHandlerInterceptor;
+import com.epam.hospital.hospital_web.interceptor.PersonalAddingHandlerInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

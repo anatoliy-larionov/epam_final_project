@@ -1,4 +1,4 @@
-package com.epam.hospital.hospital_web.web.controller.doctor;
+package com.epam.hospital.hospital_web.controller.doctor;
 
 import com.epam.hospital.hospital_web.entity.Patient;
 import com.epam.hospital.hospital_web.entity.Users;

@@ -4,7 +4,6 @@ import com.epam.hospital.hospital_web.dao.UsersDao;
 import com.epam.hospital.hospital_web.entity.Users;
 import com.epam.hospital.hospital_web.exception.InvalidPasswordException;
 import com.epam.hospital.hospital_web.exception.UserNotFoundException;
-import com.epam.hospital.hospital_web.service.RoleService;
 import com.epam.hospital.hospital_web.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,9 +12,6 @@ import java.util.List;
 
 @Service
 public class UsersServiceImpl implements UsersService {
-
-    @Autowired
-    private RoleService roleService;
 
     private final UsersDao usersDao;
 
@@ -44,7 +40,7 @@ public class UsersServiceImpl implements UsersService {
         this.usersDao.add(users);
     }
 
-    public Users authenticate(Users users) throws UserNotFoundException, InvalidPasswordException {
+    public Users authenticate(Users users) {
 
         Users foundUser = this.findUserByLogin(users.getLogin());
         if (foundUser == null) {
